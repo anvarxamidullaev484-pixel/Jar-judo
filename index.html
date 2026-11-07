@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JAR JUDO | Klub boshqaruvi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">柔</span><span>JAR <b>JUDO</b><small>JUDO KLUBI</small></span></a>
+    <nav><a href="#sportchilar">Sportchilar</a><a href="#hikmatlar">Judo ruhi</a></nav>
+    <span class="top-label">INTIZOM · HURMAT · G‘ALABA</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">JAR JUDO KLUBIGA XUSH KELIBSIZ</p>
+        <h1>Kuch — tanada,<br><em>g‘alaba — ruhda.</em></h1>
+        <p class="hero-desc">Sportchilar ro‘yxatini boshqaring, yangi dzyudochilarni qo‘shing va klub jamoasini bir
+          joyda saqlang.</p>
+        <a class="hero-btn" href="#sportchilar">Sportchilar ro‘yxati <span>↘</span></a>
+      </div>
+      <div class="hero-art" aria-label="Dzyudo bilan shug‘ullanayotgan ikki sportchi tasviri">
+        <div class="sun"></div>
+        <div class="vertical-word">柔道 · JUDO</div>
+        <svg class="fighters" viewBox="0 0 560 430" role="img" aria-label="Dzyudochilar silueti">
+          <defs>
+            <linearGradient id="gi" x1="0" y1="0" x2="1" y2="1">
+              <stop stop-color="#fff" />
+              <stop offset="1" stop-color="#cbd5e1" />
+            </linearGradient>
+            <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+              <stop stop-color="#2563eb" />
+              <stop offset="1" stop-color="#0f1f48" />
+            </linearGradient>
+          </defs>
+          <ellipse cx="285" cy="390" rx="220" ry="24" fill="#020817" opacity=".35" />
+          <g stroke="#101827" stroke-width="9" stroke-linejoin="round">
+            <circle cx="205" cy="85" r="34" fill="#c58c68" />
+            <path
+              d="M177 126 Q135 140 133 205 L105 270 Q100 292 123 300 L174 239 L206 185 L240 247 L274 226 L244 151 Q220 120 177 126Z"
+              fill="url(#gi)" />
+            <path d="M151 155 L205 210 L250 169 L275 190 L217 263 Q202 278 183 259 L125 204Z" fill="#e7edf4" />
+            <path d="M174 240 L140 319 L120 377 L157 386 L198 310 L221 258Z" fill="#e5e7eb" />
+            <path d="M221 251 L256 315 L286 365 L319 347 L276 270 L249 229Z" fill="#cbd5e1" />
+            <path d="M161 173 L214 200 L235 188" fill="none" stroke="#1d4ed8" stroke-width="12" />
+          </g>
+          <g stroke="#080f20" stroke-width="9" stroke-linejoin="round">
+            <circle cx="355" cy="98" r="32" fill="#a96f4e" />
+            <path
+              d="M329 135 Q290 145 288 205 L260 252 L290 274 L337 223 L372 182 L405 243 L444 229 L411 158 Q383 127 329 135Z"
+              fill="url(#blue)" />
+            <path d="M305 160 L357 204 L399 166 L421 190 L372 257 Q353 273 333 253 L280 208Z" fill="#1e40af" />
+            <path d="M298 260 L280 326 L253 375 L286 390 L334 328 L350 269Z" fill="#142b5e" />
+            <path d="M365 257 L405 311 L435 367 L470 354 L425 274 L397 235Z" fill="#1d4ed8" />
+            <path d="M314 181 L365 208 L393 190" fill="none" stroke="#f8fafc" stroke-width="10" />
+          </g>
+        </svg>
+        <div class="art-caption">JUDO — O‘ZINGNI YENGISH SAN’ATI</div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><strong id="totalCount">0</strong><span>Jami sportchilar</span></div>
+      <div><strong>柔道</strong><span>Judo ruhi</span></div>
+      <div><strong>100%</strong><span>Intizom va hurmat</span></div>
+    </section>
+
+    <section class="roster section" id="sportchilar">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">KLUB JAMOASI</p>
+          <h2>Sportchilar <em>ro‘yxati</em></h2>
+        </div>
+        <span class="section-note">Qo‘shish va o‘chirish</span>
+      </div>
+      <div class="manager">
+        <form id="athleteForm" class="add-form">
+          <label for="athleteName">Sportchi ismi</label>
+          <input id="athleteName" type="text" placeholder="Masalan: Azizbek Karimov" maxlength="50" required>
+          <div class="form-row">
+            <div><label for="athleteAge">Yoshi</label><input id="athleteAge" type="number" min="4" max="80"
+                placeholder="15"></div>
+            <div><label for="athleteWeight">Vazn toifasi</label>
+              <select id="athleteWeight">
+                <option value="Aniqlanmagan">Tanlang</option>
+                <option> 20kg</option>
+                <option> 25kg</option>
+                <option> 30kg</option>
+                <option> 35kg</option>
+                <option> 40kg</option>
+                <option> 40+ kg</option>
+               
+              </select>
+            </div>
+          </div>
+          <button type="submit">＋ Sportchini qo‘shish</button>
+          <p class="form-hint">Ma’lumotlar ushbu qurilmada saqlanadi.</p>
+        </form>
+        <div class="list-panel">
+          <div class="list-title">
+            <h3>Jamoa a’zolari</h3><span id="listCount">0 ta</span>
+          </div>
+          <div class="search-wrap"><span>⌕</span><input id="searchInput" type="search"
+              placeholder="Ism bo‘yicha qidirish..."></div>
+          <div id="athleteList" class="athlete-list"></div>
+          <div id="emptyState" class="empty"><span>🥋</span><b>Hozircha ro‘yxat bo‘sh</b><small>Birinchi sportchini
+              qo‘shing.</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quotes section" id="hikmatlar">
+      <p class="eyebrow">JUDO RUHI</p>
+      <h2>Tatamida kuchli,<br><em>hayotda mard bo‘l.</em></h2>
+      <div class="quote-grid">
+        <article><span>01 / INTIZOM</span>
+          <p>“Bugungi mehnat — ertangi g‘alabaning poydevori.”</p>
+        </article>
+        <article><span>02 / HURMAT</span>
+          <p>“Raqibingga hurmat ko‘rsat, o‘zingga ishonch bilan kurash.”</p>
+        </article>
+        <article><span>03 / MATONAT</span>
+          <p>“Yiqilish mag‘lubiyat emas. Qayta turmaslik — mag‘lubiyat.”</p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer><span>JAR <b>JUDO</b></span><span>Har kuni bir qadam oldinga. © 2026</span></footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
